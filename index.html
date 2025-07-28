@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>طلب تأشيرة كندا | الخدمات الاحترافية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #1a5a96;
+            --accent: #d52b1e;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #2e8540;
+            --warning: #ffc107;
+            --info: #17a2b8;
+            --border-radius: 14px;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f5f7fa;
+            padding: 0;
+            margin: 0;
+            direction: rtl;
+            color: var(--dark);
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            border-top: 6px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 30px;
+            font-size: 32px;
+            position: relative;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-weight: 700;
+        }
+        
+        h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent), var(--secondary));
+            border-radius: 3px;
+        }
+        
+        ul {
+            padding-right: 25px;
+            margin: 20px 0;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-right: 35px;
+        }
+        
+        li:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 8px;
+            width: 18px;
+            height: 18px;
+            background-color: var(--secondary);
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231a5a96'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            margin: 30px 0 20px;
+            color: var(--primary);
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        .section-title i {
+            color: white;
+            background-color: var(--secondary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(26, 90, 150, 0.2);
+        }
+        
+        label {
+            display: block;
+            margin: 25px 0 10px;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 16px;
+        }
+        
+        select,
+        input[type="text"] {
+            width: 100%;
+            padding: 14px 18px;
+            margin-top: 8px;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            font-family: 'Tajawal', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+            background-color: #f8f9fa;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            box-sizing: border-box; /* تمت الإضافة لتوحيد الأبعاد */
+            height: 54px; /* تمت الإضافة لتوحيد الارتفاع */
+        }
+        
+        select:focus,
+        input[type="text"]:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(26, 90, 150, 0.2);
+            background-color: white;
+        }
+        
+        button {
+            width: 100%;
+            padding: 16px;
+            margin-top: 30px;
+            border: none;
+            border-radius: var(--border-radius);
+            background: linear-gradient(135deg, var(--secondary), #0d4b8a);
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 90, 150, 0.3);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        button:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+            transform: translateX(100%);
+            transition: var(--transition);
+        }
+        
+        button:hover:after {
+            transform: translateX(0);
+        }
+        
+        button i {
+            font-size: 22px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e0e0e0, transparent);
+            margin: 35px 0;
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-right: 4px solid var(--secondary);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+            position: relative;
+        }
+        
+        .highlight-box:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background-color: var(--secondary);
+            clip-path: polygon(0 0, 100% 0, 100% 100%);
+            opacity: 0.1;
+        }
+        
+        .document-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 12px 15px;
+            background-color: rgba(26, 90, 150, 0.05);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        
+        .document-item:hover {
+            background-color: rgba(26, 90, 150, 0.1);
+            transform: translateX(-5px);
+        }
+        
+        .document-item i {
+            color: var(--secondary);
+            font-size: 20px;
+            min-width: 25px;
+        }
+        
+        .flag-icon {
+            margin-right: 10px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+        
+        .processing-time-container {
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .processing-time-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        
+        .processing-time-title i {
+            color: var(--accent);
+            font-size: 22px;
+        }
+        
+        .processing-time-value {
+            color: var(--accent);
+            font-weight: bold;
+            padding-right: 34px;
+            font-size: 18px;
+        }
+        
+        .visa-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .visa-type {
+            padding: 10px 18px;
+            background-color: rgba(26, 90, 150, 0.1);
+            color: var(--secondary);
+            border-radius: 30px;
+            font-weight: 700;
+            border: 1px solid rgba(26, 90, 150, 0.2);
+            transition: var(--transition);
+            font-size: 15px;
+        }
+        
+        .visa-type:hover {
+            background-color: rgba(26, 90, 150, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .price-card {
+            background: linear-gradient(135deg, var(--secondary), #0d4b8a);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+            box-shadow: 0 10px 20px rgba(26, 90, 150, 0.2);
+        }
+        
+        .price-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .price-item:last-child {
+            border-bottom: none;
+        }
+        
+        .alert-box {
+            padding: 20px;
+            background-color: #fff8e6;
+            border-right: 4px solid var(--warning);
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        
+        .alert-box i {
+            color: var(--warning);
+            font-size: 24px;
+            margin-top: 5px;
+        }
+        
+        .alert-content {
+            flex: 1;
+        }
+        
+        .alert-content p {
+            margin: 0 0 10px 0;
+        }
+        
+        .alert-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .office-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--secondary);
+        }
+        
+        .office-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+        
+        .office-title i {
+            color: var(--secondary);
+        }
+        
+        .office-details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .office-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .office-detail i {
+            color: var(--secondary);
+            margin-top: 3px;
+        }
+        
+        .submission-method {
+            background-color: #f8f9fa;
+            border-right: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+        }
+        
+        .submission-title {
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        
+        .process-steps {
+            margin-top: 15px;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-right: 45px;
+            margin-bottom: 20px;
+        }
+        
+        .process-step .step-number {
+            position: absolute;
+            right: 0;
+            top: 3px;
+            background: var(--accent);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step-details {
+            flex: 1;
+        }
+        
+        .step-details h4 {
+            margin: 0 0 5px 0;
+            color: var(--primary);
+            font-size: 16px;
+        }
+        
+        .step-details p {
+            margin: 0;
+            color: var(--dark);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        
+        .process-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 13px;
+            top: 32px;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+            opacity: 0.3;
+        }
+        
+        .animate-icon {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            .section-title {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h2 {
+                font-size: 24px;
+                flex-direction: column;
+                gap: 8px;
+            }
+            .section-title {
+                font-size: 18px;
+            }
+            .visa-types {
+                justify-content: center;
+            }
+            .visa-type {
+                padding: 8px 14px;
+                font-size: 14px;
+            }
+            select,
+            input[type="text"] {
+                border-radius: var(--border-radius); /* تمت الإضافة لإعادة تأكيد الانحناء */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h2>
+            <span class="flag-icon flag-icon-ca"></span> طلب تأشيرة كندا
+        </h2>
+        <div class="alert-box">
+            <i class="fas fa-exclamation-circle animate-icon"></i>
+            <div class="alert-content">
+                <strong>ملاحظة هامة:</strong> هذه الخدمة مقدمة من مكتب معتمد لدى الحكومة الكندية (IRCC) ونساعدك في تقديم طلب تأشيرة كندا باحترافية عالية وضمان كامل.
+            </div>
+        </div>
+        <div class="visa-types">
+            <span class="visa-type"><i class="fas fa-briefcase"></i> تأشيرة أعمال</span>
+            <span class="visa-type"><i class="fas fa-umbrella-beach"></i> تأشيرة سياحة</span>
+            <span class="visa-type"><i class="fas fa-graduation-cap"></i> تأشيرة دراسة</span>
+            <span class="visa-type"><i class="fas fa-home"></i> تأشيرة هجرة</span>
+        </div>
+
+        <p class="section-title"><i class="fas fa-paper-plane"></i> آلية التقديم على التأشيرة الكندية</p>
+        <div class="highlight-box">
+            <p>
+                يتم تقديم الطلب إلكترونيًا عبر البوابة الرسمية للحكومة الكندية من خلالنا، بصفتنا ممثلين معتمدين (بموجب نموذج التمثيل الرسمي من IRCC).
+            </p>
+            <p style="margin-top: 15px;">
+                نمتلك صلاحية كاملة لإدارة الحساب ومتابعة كافة تفاصيل الطلب حتى صدور القرار.
+            </p>
+        </div>
+        
+        <p class="section-title"><i class="fas fa-check-circle"></i> المستندات المقدمة بعد الموافقة</p>
+        <div class="document-item">
+            <i class="fas fa-fingerprint"></i>
+            <span>خطاب طلب البصمات (Biometrics Letter)</span>
+        </div>
+        <div class="document-item">
+            <i class="fas fa-passport"></i>
+            <span>طلب تسليم جواز السفر لطباعة التأشيرة (Passport Request Letter)</span>
+        </div>
+        <p style="margin-top: 20px;">
+            وتتم متابعة باقي الإجراءات عبر مراكز تقديم الطلبات المعتمدة (مثل VFS أو TLScontact).
+        </p>
+        
+        <div class="processing-time-container">
+            <div class="processing-time-title">
+                <i class="fas fa-clock"></i>
+                <span>مدة الإنجاز</span>
+            </div>
+            <div class="processing-time-value">من 7 إلى 15 يوم عمل</div>
+        </div>
+
+        <p class="section-title"><i class="fas fa-file-alt"></i> الوثائق المطلوبة</p>
+        <div class="document-item">
+            <i class="fas fa-passport"></i>
+            <span>جواز سفر ساري المفعول لمدة لا تقل عن 6 أشهر</span>
+        </div>
+        <div class="document-item">
+            <i class="fas fa-camera"></i>
+            <span>1 صورة شخصية حديثة</span>
+        </div>
+        <div class="document-item">
+            <i class="fas fa-file-contract"></i>
+            <span>سجل عدلي (لا حكم عليه)</span>
+        </div>
+        <div class="document-item">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>كشف حساب بنكي (اختياري، إذا متوفر)</span>
+        </div>
+
+        <p class="section-title"><i class="fas fa-handshake"></i> ضمان الجدية في التقديم</p>
+        <div class="alert-box">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="alert-content">
+                <p><strong>عربون الحجز:</strong> 200 دولار أمريكي يتم دفعه قبل فتح الملف والبدء بالإجراءات.</p>
+                <p>العربون غير قابل للاسترداد (يُثبت جدية العميل ويُخصم من الأتعاب لاحقًا).</p>
+                <p>في حال عدم رغبتك بدفع العربون، سيتوجب عليك السفر إلى وكيلنا في إسطنبول، تركيا وبدء طلب التأشيرة من هناك، حيث ستصدر التأشيرة من تركيا مباشرة وذلك لضمان أنك جاد فعلاً بالعمل.</p>
+            </div>
+        </div>
+
+        <p class="section-title"><i class="fas fa-shield-alt"></i> ضمان سلامة الملفات</p>
+        <div class="highlight-box">
+            <p>
+                إذا كانت لديك أي شكوك بخصوص الأوراق، يمكننا تزويدك برقم الملف للتحقق من حالة الطلب مباشرة عبر:
+            </p>
+            <ul style="margin-top: 10px;">
+                <li>السفارة أو المكاتب التابعة لها</li>
+                <li>أو ترى نتيجة البوابة الرسمية التي قدمنا من خلالها بوجودنا طبعًا</li>
+                <li>أو عبر القنوات المعتمدة الخاصة لدينا</li>
+            </ul>
+        </div>
+        
+        <div class="price-card">
+            <div class="price-title">
+                <i class="fas fa-tags"></i>
+                <span>التكاليف والضمانات</span>
+            </div>
+            <div class="price-item">
+                <span>عربون الحجز (غير مسترد)</span>
+                <span><strong>200 دولار</strong></span>
+            </div>
+            <div class="price-item">
+                <span>تأشيرة البالغين</span>
+                <span><strong>6,000 دولار</strong></span>
+            </div>
+            <div class="price-item">
+                <span>تأشيرة الأطفال</span>
+                <span><strong>3,000 دولار</strong></span>
+            </div>
+            <div style="margin-top: 15px; font-size: 14px; opacity: 0.9; text-align: center;">
+                <i class="fas fa-info-circle" style="margin-left: 8px;"></i>
+                الدفع الكامل يتم بعد صدور الموافقة على الطلب
+            </div>
+            <div style="margin-top: 12px; font-size: 16px; font-weight: bold; text-align: center; color: var(--warning); opacity: 1;">
+                ملاحظة: الأسعار تختلف للطلبات العائلية
+            </div>
+        </div>
+
+        <div class="submission-method">
+            <div class="submission-title">
+                <i class="fas fa-paper-plane"></i>
+                <span>طريقة التقديم والخطوات</span>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-details">
+                        <h4>إرسال الوثائق والعربون</h4>
+                        <p>تقوم بإرسال الوثائق المطلوبة مع عربون الجدية (200$) عبر واتساب لبدء الإجراءات فوراً.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-details">
+                        <h4>المعالجة والمتابعة</h4>
+                        <p>يقوم فريقنا بمراجعة ملفك، تقديمه رسمياً عبر بوابة الحكومة الكندية، ومتابعته حتى صدور القرار.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-details">
+                        <h4>الموافقة والدفع</h4>
+                        <p>عند صدور الموافقة، نزودك بخطابات البصمات وتسليم الجواز، وتقوم بتسديد باقي الأتعاب.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-details">
+                        <h4>إتمام الإجراءات</h4>
+                        <p>نوجهك لإتمام البصمات وتسليم الجواز في مركز التأشيرات المعتمد (VFS/TLS).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="section-title"><i class="fas fa-building"></i> مكاتبنا الرسمية</p>
+        <div class="office-card">
+            <div class="office-title">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>مكتب كندا</span>
+            </div>
+            <div class="office-details">
+                <div class="office-detail">
+                    <i class="fas fa-location-dot"></i>
+                    <span>123 شارع ينج، تورونتو، أونتاريو، كندا</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>Private number</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>canada@visa-office.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="office-card">
+            <div class="office-title">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>مكتب إسبانيا</span>
+            </div>
+            <div class="office-details">
+                <div class="office-detail">
+                    <i class="fas fa-location-dot"></i>
+                    <span>45 شارع جران فيا، مدريد، إسبانيا</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>Private number</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>spain@visa-office.com</span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <label for="visaType"><i class="fas fa-passport"></i> ما نوع التأشيرة المطلوبة؟</label>
+        <select id="visaType" name="visaType" required>
+            <option value="">-- اختر نوع التأشيرة --</option>
+            <option value="سياحة">سياحة</option>
+            <option value="عمل">عمل</option>
+            <option value="دراسة">دراسة</option>
+            <option value="هجرة">هجرة</option>
+        </select>
+
+        <label for="numPeople"><i class="fas fa-users"></i> عدد الأفراد</label>
+        <input type="text" id="numPeople" name="numPeople" placeholder="مثال: 3" required>
+
+        <label for="ages"><i class="fas fa-birthday-cake"></i> أعمار الأفراد</label>
+        <input type="text" id="ages" name="ages" placeholder="مثال: 34، 30، 5" required>
+
+        <label for="agree"><i class="fas fa-question-circle"></i> هل توافق على الشروط المذكورة أعلاه؟</label>
+        <select id="agree" name="agree" required>
+            <option value="">-- اختر --</option>
+            <option value="نعم، أوافق على جميع الشروط">أوافق</option>
+            <option value="لا أوافق">لا أوافق</option>
+        </select>
+
+        <button onclick="sendToWhatsApp()">
+            <i class="fab fa-whatsapp"></i> أكمل عبر واتساب
+        </button>
+        <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
+            <i class="fas fa-lock"></i> نضمن سرية بياناتك وعدم مشاركتها مع أي جهات خارجية
+        </div>
+    </div>
+    <script>
+        function sendToWhatsApp() {
+            const visaType = document.getElementById('visaType').value;
+            const numPeople = document.getElementById('numPeople').value;
+            const ages = document.getElementById('ages').value;
+            const agree = document.getElementById('agree').value;
+
+            if (!visaType || !numPeople || !ages || !agree) {
+                alert('❗ يرجى تعبئة جميع الحقول المطلوبة قبل المتابعة');
+                return;
+            }
+
+            if (agree.includes("لا أوافق")) {
+                alert('⚠️ يجب الموافقة على الشروط والأحكام للمتابعة');
+                return;
+            }
+
+            const message = `📋 *طلب تأشيرة كندا - بيانات العميل*
+
+🔹 *نوع التأشيرة المطلوبة:* ${visaType}
+👨‍👩‍👧 *عدد الأفراد:* ${numPeople}
+🎂 *أعمار الأفراد:* ${ages}
+🔹 *الموافقة على الشروط:* ${agree}
+
+📌 *ملاحظة:* - قرأت كافة الشروط والتفاصيل
+- أوافق على آلية العمل والدفع
+- أتعهد بصحة المعلومات المقدمة
+
+يرجى التواصل معي لإكمال الإجراءات. شكرًا لخدمتكم المميزة.`;
+
+            const phone = "2126XXXXXXXXX"; // ← ضع رقمك هنا بدون "+" أو مسافات
+            const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
