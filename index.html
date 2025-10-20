@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>طلب تأشيرة كندا | الخدمات الاحترافية</title>
+    <title>طلب تأشيرات الاتحاد الأوروبي وكندا | الخدمات الاحترافية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
@@ -45,7 +45,7 @@
         }
         
         .container {
-            max-width: 850px;
+            max-width: 900px;
             margin: 40px auto;
             background: white;
             padding: 40px;
@@ -163,8 +163,8 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            box-sizing: border-box; /* تمت الإضافة لتوحيد الأبعاد */
-            height: 54px; /* تمت الإضافة لتوحيد الارتفاع */
+            box-sizing: border-box;
+            height: 54px;
         }
         
         select:focus,
@@ -503,6 +503,217 @@
             opacity: 0.3;
         }
         
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .payment-method {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--secondary);
+            text-align: center;
+        }
+        
+        .payment-method i {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        .payment-method h4 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+        }
+        
+        .payment-method p {
+            margin: 0;
+            color: var(--dark);
+            font-size: 14px;
+        }
+        
+        .agreement-box {
+            background-color: #f0f8f0;
+            border: 2px solid var(--success);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .agreement-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--success);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .agreement-content {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .agreement-list {
+            text-align: right;
+            margin: 20px 0;
+        }
+        
+        .agreement-list li {
+            margin-bottom: 10px;
+            padding-right: 25px;
+        }
+        
+        .agreement-checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .agreement-checkbox input {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .agreement-checkbox label {
+            margin: 0;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .welcome-message {
+            background: linear-gradient(135deg, var(--secondary), #0d4b8a);
+            color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(26, 90, 150, 0.2);
+        }
+        
+        .welcome-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary), #0d4b8a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .service-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+        
+        .eu-countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .eu-country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .warning-alert {
+            background-color: #fff3cd;
+            border: 2px solid var(--warning);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .warning-alert i {
+            color: var(--warning);
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .warning-alert h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .warning-alert p {
+            margin: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        
+        .shake {
+            animation: shake 0.5s ease;
+        }
+        
         .animate-icon {
             animation: pulse 2s infinite;
         }
@@ -530,6 +741,12 @@
             .section-title {
                 font-size: 20px;
             }
+            .payment-methods {
+                flex-direction: column;
+            }
+            .eu-countries {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
         }
         
         @media (max-width: 480px) {
@@ -551,271 +768,348 @@
                 padding: 8px 14px;
                 font-size: 14px;
             }
-            select,
-            input[type="text"] {
-                border-radius: var(--border-radius); /* تمت الإضافة لإعادة تأكيد الانحناء */
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container animate__animated animate__fadeIn">
+    <div class="container">
         <h2>
-            <span class="flag-icon flag-icon-ca"></span> طلب تأشيرة كندا
+            <span class="flag-icon flag-icon-eu"></span>
+            تأشيرات الاتحاد الأوروبي وكندا
+            <span class="flag-icon flag-icon-ca"></span>
         </h2>
-        <div class="alert-box">
-            <i class="fas fa-exclamation-circle animate-icon"></i>
-            <div class="alert-content">
-                <strong>ملاحظة هامة:</strong> هذه الخدمة مقدمة من مكتب معتمد لدى الحكومة الكندية (IRCC) ونساعدك في تقديم طلب تأشيرة كندا باحترافية عالية وضمان كامل.
-            </div>
-        </div>
-        <div class="visa-types">
-            <span class="visa-type"><i class="fas fa-briefcase"></i> تأشيرة أعمال</span>
-            <span class="visa-type"><i class="fas fa-umbrella-beach"></i> تأشيرة سياحة</span>
-            <span class="visa-type"><i class="fas fa-graduation-cap"></i> تأشيرة دراسة</span>
-            <span class="visa-type"><i class="fas fa-home"></i> تأشيرة هجرة</span>
-        </div>
-
-        <p class="section-title"><i class="fas fa-paper-plane"></i> آلية التقديم على التأشيرة الكندية</p>
-        <div class="highlight-box">
-            <p>
-                يتم تقديم الطلب إلكترونيًا عبر البوابة الرسمية للحكومة الكندية من خلالنا، بصفتنا ممثلين معتمدين (بموجب نموذج التمثيل الرسمي من IRCC).
-            </p>
-            <p style="margin-top: 15px;">
-                نمتلك صلاحية كاملة لإدارة الحساب ومتابعة كافة تفاصيل الطلب حتى صدور القرار.
-            </p>
-        </div>
         
-        <p class="section-title"><i class="fas fa-check-circle"></i> المستندات المقدمة بعد الموافقة</p>
-        <div class="document-item">
-            <i class="fas fa-fingerprint"></i>
-            <span>خطاب طلب البصمات (Biometrics Letter)</span>
-        </div>
-        <div class="document-item">
-            <i class="fas fa-passport"></i>
-            <span>طلب تسليم جواز السفر لطباعة التأشيرة (Passport Request Letter)</span>
-        </div>
-        <p style="margin-top: 20px;">
-            وتتم متابعة باقي الإجراءات عبر مراكز تقديم الطلبات المعتمدة (مثل VFS أو TLScontact).
-        </p>
-        
-        <div class="processing-time-container">
-            <div class="processing-time-title">
-                <i class="fas fa-clock"></i>
-                <span>مدة الإنجاز</span>
-            </div>
-            <div class="processing-time-value">من 7 إلى 15 يوم عمل</div>
-        </div>
-
-        <p class="section-title"><i class="fas fa-file-alt"></i> الوثائق المطلوبة</p>
-        <div class="document-item">
-            <i class="fas fa-passport"></i>
-            <span>جواز سفر ساري المفعول لمدة لا تقل عن 6 أشهر</span>
-        </div>
-        <div class="document-item">
-            <i class="fas fa-camera"></i>
-            <span>1 صورة شخصية حديثة</span>
-        </div>
-        <div class="document-item">
-            <i class="fas fa-file-contract"></i>
-            <span>سجل عدلي (لا حكم عليه)</span>
-        </div>
-        <div class="document-item">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <span>كشف حساب بنكي (اختياري، إذا متوفر)</span>
-        </div>
-
-        <p class="section-title"><i class="fas fa-handshake"></i> ضمان الجدية في التقديم</p>
         <div class="alert-box">
             <i class="fas fa-exclamation-triangle"></i>
             <div class="alert-content">
-                <p><strong>عربون الحجز:</strong> 200 دولار أمريكي يتم دفعه قبل فتح الملف والبدء بالإجراءات.</p>
-                <p>العربون قابل للاسترداد (يُثبت جدية العميل ويُخصم من الأتعاب لاحقًا).</p>
-                <p>في حال عدم رغبتك بدفع العربون، سيتوجب عليك السفر إلى وكيلنا في إسطنبول، تركيا وبدء طلب التأشيرة من هناك، حيث ستصدر التأشيرة من تركيا مباشرة وذلك لضمان أنك جاد فعلاً بالعمل.</p>
+                <p><strong>ملاحظة هامة:</strong> نضمن لك خدمة احترافية لاستخراج التأشيرات بنجاح مع متابعة كاملة حتى الحصول على الموافقة.</p>
             </div>
         </div>
 
-        <p class="section-title"><i class="fas fa-shield-alt"></i> ضمان سلامة الملفات</p>
-        <div class="highlight-box">
-            <p>
-                إذا كانت لديك أي شكوك بخصوص الأوراق، يمكننا تزويدك برقم الملف للتحقق من حالة الطلب مباشرة عبر:
-            </p>
-            <ul style="margin-top: 10px;">
-                <li>السفارة أو المكاتب التابعة لها</li>
-                <li>أو ترى نتيجة البوابة الرسمية التي قدمنا من خلالها بوجودنا طبعًا</li>
-                <li>أو عبر القنوات المعتمدة الخاصة لدينا</li>
-            </ul>
+        <!-- خدمة تأشيرات الاتحاد الأوروبي وكندا -->
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-icon">
+                    <i class="fas fa-globe-europe"></i>
+                </div>
+                <h3 class="service-title">تأشيرات الاتحاد الأوروبي وكندا</h3>
+            </div>
+            
+            <div class="price-card">
+                <div class="price-title">
+                    <i class="fas fa-tags"></i>
+                    <span>التكاليف - سعر موحد</span>
+                </div>
+                <div class="price-item">
+                    <span>سعر التأشيرة الشاملة</span>
+                    <span>4500 $</span>
+                </div>
+            </div>
+            
+            <div class="processing-time-container">
+                <div class="processing-time-title">
+                    <i class="fas fa-bolt"></i>
+                    <span>مدة المعالجة السريعة</span>
+                </div>
+                <div class="processing-time-value">15 يوم فقط (أسبوعين)</div>
+            </div>
+
+            <div class="section-title">
+                <i class="fas fa-passport"></i>
+                <span>أنواع التأشيرات المتاحة لكندا</span>
+            </div>
+            
+            <div class="visa-types">
+                <div class="visa-type">تأشيرة سياحية</div>
+                <div class="visa-type">تأشيرة دراسة</div>
+                <div class="visa-type">تأشيرة عمل</div>
+                <div class="visa-type">تأشيرة زيارة عائلية</div>
+            </div>
+            
+            <div class="section-title">
+                <i class="fas fa-globe-europe"></i>
+                <span>دول الاتحاد الأوروبي المتاحة</span>
+            </div>
+            
+            <div class="eu-countries">
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-fr"></span>
+                    <span>فرنسا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-de"></span>
+                    <span>ألمانيا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-it"></span>
+                    <span>إيطاليا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-es"></span>
+                    <span>إسبانيا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-nl"></span>
+                    <span>هولندا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-be"></span>
+                    <span>بلجيكا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-at"></span>
+                    <span>النمسا</span>
+                </div>
+                <div class="eu-country">
+                    <span class="flag-icon flag-icon-ch"></span>
+                    <span>سويسرا</span>
+                </div>
+            </div>
+            
+            <div class="alert-box">
+                <i class="fas fa-info-circle"></i>
+                <div class="alert-content">
+                    <p><strong>مميزات الخدمة:</strong></p>
+                    <ul>
+                        <li>✅ <strong>نحن نجهز جميع المستندات</strong> - العميل لا يحتاج لشيء</li>
+                        <li>✅ <strong>مدة معالجة سريعة</strong> - 15 يوم فقط</li>
+                        <li>✅ <strong>سعر موحد</strong> - 4500 دولار لجميع الدول بما فيها كندا</li>
+                        <li>✅ <strong>خدمة شاملة</strong> - من البداية حتى استلام التأشيرة</li>
+                        <li>✅ <strong>جميع أنواع التأشيرات</strong> - سياحية، دراسة، عمل، عائلية</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         
-        <div class="price-card">
-            <div class="price-title">
-                <i class="fas fa-tags"></i>
-                <span>التكاليف والضمانات</span>
+        <div class="section-title">
+            <i class="fas fa-credit-card"></i>
+            <span>طريقة الدفع الآمنة</span>
+        </div>
+        
+        <div class="payment-methods">
+            <div class="payment-method">
+                <i class="fas fa-university"></i>
+                <h4>فتح حساب بنكي أوروبي</h4>
+                <p>فتح حساب بنكي أوروبي عبر الرابط المرفق</p>
             </div>
-            <div class="price-item">
-                <span>عربون الحجز (مسترد )</span>
-                <span><strong>200 دولار</strong></span>
+            
+            <div class="payment-method">
+                <i class="fas fa-wallet"></i>
+                <h4>إيداع المبلغ</h4>
+                <p>إيداع المبلغ الكامل في الحساب البنكي الأوروبي</p>
             </div>
-            <div class="price-item">
-                <span>تأشيرة البالغين</span>
-                <span><strong>6,000 دولار</strong></span>
-            </div>
-            <div class="price-item">
-                <span>تأشيرة الأطفال</span>
-                <span><strong>3,000 دولار</strong></span>
-            </div>
-            <div style="margin-top: 15px; font-size: 14px; opacity: 0.9; text-align: center;">
-                <i class="fas fa-info-circle" style="margin-left: 8px;"></i>
-                الدفع الكامل يتم بعد صدور الموافقة على الطلب
-            </div>
-            <div style="margin-top: 12px; font-size: 16px; font-weight: bold; text-align: center; color: var(--warning); opacity: 1;">
-                ملاحظة: الأسعار تختلف للطلبات العائلية
+            
+            <div class="payment-method">
+                <i class="fas fa-file-invoice"></i>
+                <h4>شهادة الرصيد</h4>
+                <p>استخراج شهادة الرصيد من التطبيق وإرسالها لنا</p>
             </div>
         </div>
-
+        
+        <div class="alert-box">
+            <i class="fas fa-info-circle"></i>
+            <div class="alert-content">
+                <p><strong>معلومات هامة حول الدفع:</strong></p>
+                <ul>
+                    <li>يتم الدفع <strong>بالكامل بعد استخراج التأشيرة</strong> وليس قبل</li>
+                    <li>يجب فتح حساب بنكي أوروبي عبر الرابط: <a href="https://tradehub-pay.online" style="color: var(--secondary); font-weight: bold;">https://tradehub-pay.online</a></li>
+                    <li>يتم إيداع المبلغ الكامل في الحساب البنكي الأوروبي</li>
+                    <li>بعد استخراج التأشيرة، يتم تحويل المبلغ من حسابك إلى حسابنا عبر نفس التطبيق</li>
+                    <li><strong>للاتحاد الأوروبي وكندا:</strong> نحن نجهز جميع المستندات - أنت فقط تودع الأموال وتستخرج شهادة الرصيد</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section-title">
+            <i class="fas fa-clipboard-list"></i>
+            <span>خطوات التقديم</span>
+        </div>
+        
         <div class="submission-method">
             <div class="submission-title">
-                <i class="fas fa-paper-plane"></i>
-                <span>طريقة التقديم والخطوات</span>
+                <i class="fas fa-list-ol"></i>
+                <span>مراحل تقديم الطلب</span>
             </div>
+            
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-details">
-                        <h4>إرسال الوثائق والعربون</h4>
-                        <p>تقوم بإرسال الوثائق المطلوبة مع عربون الجدية (200$) عبر واتساب لبدء الإجراءات فوراً.</p>
+                        <h4>فتح حساب بنكي أوروبي</h4>
+                        <p>فتح حساب بنكي أوروبي عبر الرابط المرفق وإيداع 4500$</p>
                     </div>
                 </div>
+                
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-details">
-                        <h4>المعالجة والمتابعة</h4>
-                        <p>يقوم فريقنا بمراجعة ملفك، تقديمه رسمياً عبر بوابة الحكومة الكندية، ومتابعته حتى صدور القرار.</p>
+                        <h4>استخراج شهادة الرصيد</h4>
+                        <p>استخراج شهادة الرصيد من التطبيق وإرسالها لنا</p>
                     </div>
                 </div>
+                
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-details">
-                        <h4>الموافقة والدفع</h4>
-                        <p>عند صدور الموافقة، نزودك بخطابات البصمات وتسليم الجواز، وتقوم بتسديد باقي الأتعاب.</p>
+                        <h4>نحن نجهز كل شيء</h4>
+                        <p>نقوم نحن بتجهيز جميع المستندات المطلوبة</p>
                     </div>
                 </div>
+                
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-details">
-                        <h4>إتمام الإجراءات</h4>
-                        <p>نوجهك لإتمام البصمات وتسليم الجواز في مركز التأشيرات المعتمد (VFS/TLS).</p>
+                        <h4>المعالجة السريعة</h4>
+                        <p>معالجة الطلب خلال 15 يوم فقط</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-details">
+                        <h4>الدفع بعد الاستخراج</h4>
+                        <p>بعد استخراج التأشيرة، يتم تحويل المبلغ من حسابك</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <p class="section-title"><i class="fas fa-building"></i> مكاتبنا الرسمية</p>
-        <div class="office-card">
-            <div class="office-title">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>مكتب كندا</span>
+        
+        <!-- قسم الموافقة على التفاصيل -->
+        <div class="agreement-box">
+            <div class="agreement-title">
+                <i class="fas fa-handshake"></i>
+                <span>الموافقة على الشروط</span>
             </div>
-            <div class="office-details">
-                <div class="office-detail">
-                    <i class="fas fa-location-dot"></i>
-                    <span>123 شارع ينج، تورونتو، أونتاريو، كندا</span>
+            
+            <div class="agreement-content">
+                <p>قبل التواصل معنا، يرجى قراءة الشروط التالية والتأكد من موافقتك عليها:</p>
+                
+                <div class="agreement-list">
+                    <ul>
+                        <li>أوافق على طريقة الدفع بعد استخراج التأشيرة</li>
+                        <li>أوافق على فتح حساب بنكي أوروبي وإيداع المبلغ الكامل</li>
+                        <li>أقر بمعرفتي بأن الدفع يتم بعد الموافقة على التأشيرة</li>
+                        <li>أوافق على تحويل المبلغ من حسابي بعد استخراج التأشيرة</li>
+                        <li>أعترف بأنني اطلعت على جميع التكاليف والشروط</li>
+                    </ul>
                 </div>
-                <div class="office-detail">
-                    <i class="fas fa-phone"></i>
-                    <span>Private number</span>
-                </div>
-                <div class="office-detail">
-                    <i class="fas fa-envelope"></i>
-                    <span>canada@visa-office.com</span>
-                </div>
-            </div>
-        </div>
-        <div class="office-card">
-            <div class="office-title">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>مكتب إسبانيا</span>
-            </div>
-            <div class="office-details">
-                <div class="office-detail">
-                    <i class="fas fa-location-dot"></i>
-                    <span>45 شارع جران فيا، مدريد، إسبانيا</span>
-                </div>
-                <div class="office-detail">
-                    <i class="fas fa-phone"></i>
-                    <span>Private number</span>
-                </div>
-                <div class="office-detail">
-                    <i class="fas fa-envelope"></i>
-                    <span>spain@visa-office.com</span>
+                
+                <div class="agreement-checkbox">
+                    <input type="checkbox" id="agreement" onchange="toggleWhatsAppButton()">
+                    <label for="agreement">أوافق على جميع الشروط والتفاصيل المذكورة أعلاه</label>
                 </div>
             </div>
         </div>
+        
+        <!-- رسالة الترحيب بعد الموافقة -->
+        <div id="welcomeMessage" class="welcome-message" style="display: none;">
+            <div class="welcome-title">
+                <i class="fas fa-glass-cheers"></i>
+                <span>مرحباً بك! 🎉</span>
+            </div>
+            <p>شكراً لموافقتك على الشروط. نحن على استعداد لمساعدتك في استخراج التأشيرة.</p>
+            <p>يمكنك الآن التواصل معنا عبر الواتساب وسنقوم بالرد عليك في أقرب وقت.</p>
+        </div>
 
-        <hr>
-
-        <label for="visaType"><i class="fas fa-passport"></i> ما نوع التأشيرة المطلوبة؟</label>
-        <select id="visaType" name="visaType" required>
-            <option value="">-- اختر نوع التأشيرة --</option>
-            <option value="سياحة">سياحة</option>
-            <option value="عمل">عمل</option>
-            <option value="دراسة">دراسة</option>
-            <option value="هجرة">هجرة</option>
-        </select>
-
-        <label for="numPeople"><i class="fas fa-users"></i> عدد الأفراد</label>
-        <input type="text" id="numPeople" name="numPeople" placeholder="مثال: 3" required>
-
-        <label for="ages"><i class="fas fa-birthday-cake"></i> أعمار الأفراد</label>
-        <input type="text" id="ages" name="ages" placeholder="مثال: 34، 30، 5" required>
-
-        <label for="agree"><i class="fas fa-question-circle"></i> هل توافق على الشروط المذكورة أعلاه؟</label>
-        <select id="agree" name="agree" required>
-            <option value="">-- اختر --</option>
-            <option value="نعم، أوافق على جميع الشروط">أوافق</option>
-            <option value="لا أوافق">لا أوافق</option>
-        </select>
-
-        <button onclick="sendToWhatsApp()">
-            <i class="fab fa-whatsapp"></i> أكمل عبر واتساب
+        <!-- تنبيه الموافقة -->
+        <div id="warningAlert" class="warning-alert" style="display: none;">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>يرجى الموافقة أولاً</h3>
+            <p>يجب الموافقة على الشروط والتفاصيل أولاً قبل التواصل عبر الواتساب.</p>
+            <p>يرجى تحديد خانة "أوافق على جميع الشروط" للمتابعة.</p>
+        </div>
+        
+        <div class="section-title">
+            <i class="fas fa-phone-alt"></i>
+            <span>للتواصل والاستفسار</span>
+        </div>
+        
+        <div class="office-card">
+            <div class="office-title">
+                <i class="fas fa-headset"></i>
+                <span>معلومات الاتصال</span>
+            </div>
+            <div class="office-details">
+                <div class="office-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>للحصول على رقم الواتساب المباشر، يرجى التواصل بعد الموافقة على الشروط</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-clock"></i>
+                    <span>متاحون للرد على استفساراتكم على مدار الساعة</span>
+                </div>
+                <div class="office-detail">
+                    <i class="fas fa-question-circle"></i>
+                    <span>نساعدكم في استفساراتكم حول فتح الحسابات البنكية الأوروبية</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert-box">
+            <i class="fas fa-shield-alt"></i>
+            <div class="alert-content">
+                <p><strong>ضمان الخدمة:</strong> نضمن لكم خدمة احترافية وآمنة مع فريق متخصص ذو خبرة واسعة في استخراج التأشيرات.</p>
+            </div>
+        </div>
+        
+        <button id="whatsappButton" onclick="handleWhatsAppClick()">
+            <i class="fab fa-whatsapp"></i>
+            أوافق أولاً على الشروط للتواصل عبر الواتساب
         </button>
-        <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
-            <i class="fas fa-lock"></i> نضمن سرية بياناتك وعدم مشاركتها مع أي جهات خارجية
-        </div>
     </div>
+
     <script>
-        function sendToWhatsApp() {
-            const visaType = document.getElementById('visaType').value;
-            const numPeople = document.getElementById('numPeople').value;
-            const ages = document.getElementById('ages').value;
-            const agree = document.getElementById('agree').value;
-
-            if (!visaType || !numPeople || !ages || !agree) {
-                alert('❗ يرجى تعبئة جميع الحقول المطلوبة قبل المتابعة');
+        function toggleWhatsAppButton() {
+            const agreementCheckbox = document.getElementById('agreement');
+            const whatsappButton = document.getElementById('whatsappButton');
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            const warningAlert = document.getElementById('warningAlert');
+            
+            if (agreementCheckbox.checked) {
+                whatsappButton.disabled = false;
+                whatsappButton.innerHTML = '<i class="fab fa-whatsapp animate-icon"></i> تواصل معنا عبر الواتساب';
+                whatsappButton.style.background = 'linear-gradient(135deg, var(--secondary), #0d4b8a)';
+                whatsappButton.style.cursor = 'pointer';
+                welcomeMessage.style.display = 'block';
+                warningAlert.style.display = 'none';
+            } else {
+                whatsappButton.disabled = false;
+                whatsappButton.innerHTML = '<i class="fab fa-whatsapp"></i> أوافق أولاً على الشروط للتواصل عبر الواتساب';
+                whatsappButton.style.background = '#cccccc';
+                whatsappButton.style.cursor = 'not-allowed';
+                welcomeMessage.style.display = 'none';
+                warningAlert.style.display = 'none';
+            }
+        }
+        
+        function handleWhatsAppClick() {
+            const agreementCheckbox = document.getElementById('agreement');
+            const warningAlert = document.getElementById('warningAlert');
+            const whatsappButton = document.getElementById('whatsappButton');
+            
+            if (!agreementCheckbox.checked) {
+                // إظهار التنبيه داخل الصفحة
+                warningAlert.style.display = 'block';
+                
+                // إضافة تأثير اهتزاز للزر
+                whatsappButton.classList.add('shake');
+                setTimeout(() => {
+                    whatsappButton.classList.remove('shake');
+                }, 500);
+                
+                // التمرير إلى التنبيه
+                warningAlert.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
                 return;
             }
-
-            if (agree.includes("لا أوافق")) {
-                alert('⚠️ يجب الموافقة على الشروط والأحكام للمتابعة');
-                return;
-            }
-
-            const message = `📋 *طلب تأشيرة كندا - بيانات العميل*
-
-🔹 *نوع التأشيرة المطلوبة:* ${visaType}
-👨‍👩‍👧 *عدد الأفراد:* ${numPeople}
-🎂 *أعمار الأفراد:* ${ages}
-🔹 *الموافقة على الشروط:* ${agree}
-
-📌 *ملاحظة:* - قرأت كافة الشروط والتفاصيل
-- أوافق على آلية العمل والدفع
-- أتعهد بصحة المعلومات المقدمة
-
-يرجى التواصل معي لإكمال الإجراءات. شكرًا لخدمتكم المميزة.`;
-
-            const phone = "212722270642"; // ← ضع رقمك هنا بدون "+" أو مسافات
-            const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
+            
+            // رسالة جاهزة للواتساب
+            const message = "مرحباً! 👋\n\nأود الاستفسار عن تأشيرات الاتحاد الأوروبي وكندا.\nلقد اطلعت على جميع الشروط ووافقت عليها:\n\n• تأشيرات الاتحاد الأوروبي وكندا - 4500$\n• مدة المعالجة 15 يوم فقط\n• طريقة الدفع بعد الاستخراج\n• فتح حساب بنكي أوروبي\n• الشروط والأحكام\n\nيرجى تزويدي بمزيد من المعلومات.";
+            
+            // افتح رابط الواتساب مع الرسالة الجاهزة
+            window.open('https://wa.me/1234567890?text=' + encodeURIComponent(message), '_blank');
         }
     </script>
 </body>
